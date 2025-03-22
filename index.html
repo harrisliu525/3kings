@@ -66,12 +66,20 @@
     <main class="max-w-5xl mx-auto px-4 md:px-8 py-8">
         <section class="mb-12">
             <div class="game-container">
-                <iframe frameborder="0" src="https://itch.io/embed/2549898" width="552" height="167"><a href="https://socketlab.itch.io/3kings">3 Kings by Socket Lab, GSpace</a></iframe>
+                <iframe 
+                    frameborder="0" 
+                    src="https://itch.io/embed/2549898" 
+                    width="552" 
+                    height="167">
+                    <a href="https://socketlab.itch.io/3kings">3 Kings by Socket Lab, GSpace</a>
+                </iframe>
+                
+                -->
             </div>
             <div class="text-center mt-4">
-                <button class="bg-apple-green hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
-                    Play Fullscreen
-                </button>
+                <a href="https://socketlab.itch.io/3kings" target="_blank" class="bg-apple-green hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg inline-block">
+                    Play on itch.io
+                </a>
             </div>
         </section>
         
@@ -124,9 +132,9 @@
             <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-blue dark:text-apple-blue">Ready to Become a King?</h2>
             <div class="text-center">
                 <p class="text-lg mb-6">Jump into the action now and start your journey to the throne!</p>
-                <button class="bg-apple-blue hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg mx-2 mb-4">
-                    Play Now
-                </button>
+                <a href="https://socketlab.itch.io/3kings" target="_blank" class="bg-apple-blue hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg mx-2 mb-4 inline-block">
+                    Play Now on itch.io
+                </a>
                 <button class="bg-apple-gray hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg mx-2 mb-4">
                     Learn More
                 </button>
@@ -149,23 +157,5 @@
             </div>
         </div>
     </footer>
-    
-    <script>
-        // Script to make the fullscreen button work
-        document.addEventListener('DOMContentLoaded', function() {
-            const fullscreenButton = document.querySelector('.game-container + div button');
-            const gameFrame = document.querySelector('.game-frame');
-            
-            fullscreenButton.addEventListener('click', function() {
-                if (gameFrame.requestFullscreen) {
-                    gameFrame.requestFullscreen();
-                } else if (gameFrame.webkitRequestFullscreen) {
-                    gameFrame.webkitRequestFullscreen();
-                } else if (gameFrame.msRequestFullscreen) {
-                    gameFrame.msRequestFullscreen();
-                }
-            });
-        });
-    </script>
 </body>
 </html>
