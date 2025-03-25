@@ -3,158 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3Kings - The Ultimate Strategy Card Game | Play Online Now</title>
-    <meta name="description" content="Play 3Kings online - a strategic card game that challenges your tactical skills. Experience the thrill of becoming one of the three kings in this addictive game.">
-    <link rel="canonical" href="https://3kings.online">
-    <meta name="keywords" content="3kings, card game, strategy game, online game, 3kings online">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        apple: {
-                            blue: '#007AFF',
-                            gray: '#8E8E93',
-                            green: '#34C759',
-                            red: '#FF3B30',
-                            darkbg: '#1C1C1E',
-                            lightbg: '#F2F2F7'
-                        }
-                    }
-                }
-            }
+    <title>Monster Survivors - Survive the Horde in this Epic Adventure Game</title>
+    <meta name="description" content="Play Monster Survivors online - an action-packed survival game where you battle endless hordes of monsters with unique characters and abilities.">
+    <link rel="canonical" href="https://3kings.online/monster-survivors">
+    <meta name="keywords" content="Monster Survivors, online game, survival game, action game, monster game">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-green: #34C759;
+            --apple-orange: #FF9500;
+            --apple-red: #FF3B30;
+            --apple-purple: #AF52DE;
+            --apple-gray: #8E8E93;
+            --apple-dark: #1C1C1E;
+            --apple-light: #F2F2F7;
         }
-    </script>
-    <style type="text/css">
-        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap');
         
         body {
-            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: var(--apple-light);
+            color: var(--apple-dark);
         }
         
         .game-container {
-            aspect-ratio: 16/9;
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            overflow: hidden;
         }
         
-        .game-frame {
+        .btn-primary {
+            background-color: var(--apple-blue);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0062cc;
+            transform: translateY(-2px);
+        }
+        
+        .feature-card {
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .game-iframe {
             width: 100%;
-            height: 100%;
+            height: 600px;
             border: none;
             border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
-        @media (max-width: 640px) {
-            .game-container {
-                aspect-ratio: 4/3;
+        @media (max-width: 768px) {
+            .game-iframe {
+                height: 400px;
             }
+        }
+        
+        @media (max-width: 480px) {
+            .game-iframe {
+                height: 300px;
+            }
+        }
+        
+        .header-gradient {
+            background: linear-gradient(90deg, var(--apple-blue), var(--apple-purple));
+            color: white;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--apple-blue);
+            border-radius: 2px;
         }
     </style>
 </head>
-<body class="bg-apple-lightbg dark:bg-apple-darkbg text-gray-800 dark:text-white">
-    <header class="bg-apple-blue text-white py-6 px-4 md:px-8">
-        <div class="max-w-5xl mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-center">3Kings: Master of Strategy</h1>
-            <p class="text-center mt-2 text-lg md:text-xl">Outwit your opponents and claim your throne in this captivating card game</p>
+<body>
+    <header class="header-gradient py-6 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto">
+            <nav class="flex justify-between items-center mb-8">
+                <div class="text-2xl font-bold">3Kings.online</div>
+                <div>
+                    <button class="btn-primary">Play Now</button>
+                </div>
+            </nav>
+            
+            <div class="text-center py-12">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Monster Survivors</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto">Survive endless waves of monsters in this thrilling action-packed adventure!</p>
+            </div>
         </div>
     </header>
-    
-    <main class="max-w-5xl mx-auto px-4 md:px-8 py-8">
-        <section class="mb-12">
-            <div class="game-container">
-                <iframe 
-                    frameborder="0" 
-                    src="https://itch.io/embed/2549898" 
-                    width="552" 
-                    height="167">
-                    <a href="https://socketlab.itch.io/3kings">3 Kings by Socket Lab, GSpace</a>
-                </iframe>
-                
-            </div>
-            <div class="text-center mt-4">
-                <a href="https://socketlab.itch.io/3kings" target="_blank" class="bg-apple-green hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg inline-block">
-                    Play on itch.io
-                </a>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="game-container bg-white p-4 md:p-8 mb-16">
+            <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                    class="game-iframe" 
+                    title="Monster Survivors Game" 
+                    allow="fullscreen" 
+                    loading="lazy">
+            </iframe>
+            
+            <div class="mt-6 text-center">
+                <button class="btn-primary">Play Full Screen</button>
             </div>
         </section>
-        
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-blue dark:text-apple-blue">About 3Kings</h2>
-            <div class="grid md:grid-cols-2 gap-8">
+
+        <section class="mb-16">
+            <h2 class="section-title text-3xl font-bold mb-8">About Monster Survivors</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <p class="mb-4 text-lg">3Kings is an exciting strategic card game where players compete to become one of the three kings. Using tactical thinking and clever card play, you'll need to outmaneuver your opponents while forming alliances and breaking them at just the right moment.</p>
-                    <p class="mb-4 text-lg">The game combines elements of classic card games with unique mechanics that create a fresh and engaging experience for players of all skill levels.</p>
+                    <p class="text-lg mb-4">
+                        Monster Survivors is an action-packed survival game where you face endless hordes of monsters. Choose from unique characters with special abilities and fight your way through increasingly difficult waves of enemies.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Collect experience points, level up, and unlock powerful upgrades to enhance your character's abilities. Discover rare items and combine them to create devastating combinations that will help you survive longer.
+                    </p>
+                    <p class="text-lg">
+                        With its addictive gameplay, stunning visuals, and challenging progression system, Monster Survivors offers hours of entertainment for players of all skill levels.
+                    </p>
                 </div>
-                <div>
-                    <p class="mb-4 text-lg">With beautiful graphics and intuitive controls, 3Kings offers a seamless gaming experience across all devices. Play anytime, anywhere, and challenge your friends or match with players from around the world.</p>
-                    <p class="text-lg">Each game is different, ensuring hours of replayability and endless opportunities to refine your strategy.</p>
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-4">Game Features</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Multiple unique characters with different abilities</li>
+                        <li>Endless waves of diverse monsters</li>
+                        <li>RPG-style progression and upgrades</li>
+                        <li>Collect and combine powerful items</li>
+                        <li>Beautiful pixel art graphics</li>
+                        <li>Dynamic difficulty scaling</li>
+                        <li>Compete for high scores on the leaderboard</li>
+                    </ul>
                 </div>
             </div>
         </section>
-        
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-blue dark:text-apple-blue">How to Play</h2>
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
-                <ol class="list-decimal pl-6 space-y-4">
-                    <li class="text-lg">Start with your initial hand of cards and plan your strategy</li>
-                    <li class="text-lg">Play cards strategically to gain points and influence</li>
-                    <li class="text-lg">Form temporary alliances with other players when beneficial</li>
-                    <li class="text-lg">Collect special cards to unlock powerful abilities</li>
-                    <li class="text-lg">Be one of the three players with the highest scores to become a king and win!</li>
-                </ol>
-            </div>
-        </section>
-        
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-blue dark:text-apple-blue">Game Features</h2>
+
+        <section class="mb-16">
+            <h2 class="section-title text-3xl font-bold mb-8">How to Play</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
-                    <h3 class="text-xl font-semibold mb-3 text-apple-red">Strategic Gameplay</h3>
-                    <p>Plan your moves carefully and adapt to changing circumstances to outthink your opponents.</p>
+                <div class="feature-card bg-white p-6 shadow-md">
+                    <div class="text-4xl text-center mb-4" style="color: var(--apple-blue)">1</div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Choose Your Character</h3>
+                    <p>Select from various unique characters, each with their own special abilities and starting stats.</p>
                 </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
-                    <h3 class="text-xl font-semibold mb-3 text-apple-green">Multiplayer Action</h3>
-                    <p>Play against friends or match with players from around the world in real-time competitions.</p>
+                <div class="feature-card bg-white p-6 shadow-md">
+                    <div class="text-4xl text-center mb-4" style="color: var(--apple-green)">2</div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Battle Monsters</h3>
+                    <p>Move around the map and automatically attack nearby monsters. Collect experience gems to level up.</p>
                 </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
-                    <h3 class="text-xl font-semibold mb-3 text-apple-blue">Beautiful Design</h3>
-                    <p>Enjoy stunning visuals and smooth animations that enhance your gaming experience.</p>
+                <div class="feature-card bg-white p-6 shadow-md">
+                    <div class="text-4xl text-center mb-4" style="color: var(--apple-purple)">3</div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Upgrade & Survive</h3>
+                    <p>Choose new abilities and upgrades when you level up. Survive as long as possible against increasingly difficult waves.</p>
                 </div>
             </div>
         </section>
-        
+
+        <section class="mb-16">
+            <h2 class="section-title text-3xl font-bold mb-8">Game Controls</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Keyboard Controls</h3>
+                        <ul class="space-y-2">
+                            <li><span class="font-bold">WASD or Arrow Keys:</span> Move your character</li>
+                            <li><span class="font-bold">Space:</span> Use special ability (when available)</li>
+                            <li><span class="font-bold">ESC:</span> Pause game</li>
+                            <li><span class="font-bold">1-4 Keys:</span> Quick-select items</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Mobile Controls</h3>
+                        <ul class="space-y-2">
+                            <li><span class="font-bold">Virtual Joystick:</span> Move your character</li>
+                            <li><span class="font-bold">Action Button:</span> Use special ability</li>
+                            <li><span class="font-bold">Menu Button:</span> Pause game</li>
+                            <li><span class="font-bold">Item Icons:</span> Tap to use items</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section>
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-blue dark:text-apple-blue">Ready to Become a King?</h2>
-            <div class="text-center">
-                <p class="text-lg mb-6">Jump into the action now and start your journey to the throne!</p>
-                <a href="https://socketlab.itch.io/3kings" target="_blank" class="bg-apple-blue hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg mx-2 mb-4 inline-block">
-                    Play Now on itch.io
-                </a>
-                <button class="bg-apple-gray hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg mx-2 mb-4">
-                    Learn More
-                </button>
+            <h2 class="section-title text-3xl font-bold mb-8">Tips for Success</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Beginner Tips</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Focus on movement and avoiding monster clusters</li>
+                        <li>Prioritize health and defensive upgrades early on</li>
+                        <li>Collect all experience gems to level up faster</li>
+                        <li>Don't stand still - keep moving to avoid damage</li>
+                        <li>Learn each character's strengths and weaknesses</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Advanced Strategies</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Create synergistic item and ability combinations</li>
+                        <li>Balance offensive and defensive upgrades</li>
+                        <li>Use terrain and obstacles to funnel monsters</li>
+                        <li>Save your special ability for emergency situations</li>
+                        <li>Plan your upgrade path based on the monsters you're facing</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
-    
-    <footer class="bg-gray-100 dark:bg-gray-900 py-8 px-4 md:px-8 mt-12">
-        <div class="max-w-5xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <p class="text-lg font-bold text-apple-blue">3Kings Online</p>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">© 2025 All Rights Reserved</p>
+
+    <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Monster Survivors</h2>
+                    <p>An epic survival action game where you battle endless waves of monsters. Level up, upgrade abilities, and survive as long as possible!</p>
                 </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-apple-blue hover:text-opacity-80">Privacy Policy</a>
-                    <a href="#" class="text-apple-blue hover:text-opacity-80">Terms of Service</a>
-                    <a href="#" class="text-apple-blue hover:text-opacity-80">Contact Us</a>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-300">Home</a></li>
+                        <li><a href="#" class="hover:text-blue-300">About</a></li>
+                        <li><a href="#" class="hover:text-blue-300">Games</a></li>
+                        <li><a href="#" class="hover:text-blue-300">Contact</a></li>
+                    </ul>
                 </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Legal</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-300">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-blue-300">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2025 3Kings.online. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Add fullscreen functionality
+        document.querySelector('.btn-primary').addEventListener('click', function() {
+            const iframe = document.querySelector('.game-iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        });
+    </script>
 </body>
 </html>
